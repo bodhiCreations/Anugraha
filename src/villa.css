@@ -1,0 +1,1039 @@
+
+/* --------reset--------*/
+html {
+	height: 100%;
+	width: 100%;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	-webkit-text-autospace: ideograph-parenthesis;
+	-moz-text-autospace: ideograph-parenthesis;
+	-ms-text-autospace: ideograph-parenthesis;
+	-o-text-autospace: ideograph-parenthesis;
+	text-autospace: ideograph-parenthesis;}
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+	font-family: 'Georgia';
+	line-height: 20px;
+	letter-spacing: 0.065rem;
+	-webkit-text-size-adjust: 100%;
+	background-color:#dde3dc;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+section, nav, article, aside, header, footer, main, figure, figcaption, details, menu {
+	display: block;}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 auto;
+	font-size: inherit;
+	font-weight: normal;}
+p, div, ul, li, figure {
+	margin: 0;
+	padding: 0;
+	list-style: none;}
+ol, ul {
+	list-style: none;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+img, canvas {
+	height: auto;
+	max-width: 100%;}
+	
+input[type="button"],input[type="submit"] {
+    -webkit-appearance: none;
+  }
+
+/*-------- Link-------- */
+a{
+	color: #000;
+	text-decoration: none;}
+a[href]:hover{
+     color: #dcdcdc;
+	-webkit-transition: color 0.2s cubic-bezier(0,0.9,0.3,1);
+	-moz-transition: color 0.2s cubic-bezier(0,0.9,0.3,1);
+	-ms-transition: color 0.2s cubic-bezier(0,0.9,0.3,1);
+	-o-transition: color 0.2s cubic-bezier(0,0.9,0.3,1);
+	transition: color 0.2s cubic-bezier(0,0.9,0.3,1);
+    filter: alpha(opacity=10);}
+::-moz-selection{
+	background-color: transparent;
+	background: #fff;
+	color: #aaa;
+	text-shadow: none;}
+::selection {
+	background-color: transparent;
+	background: #fff;
+	color: #aaa;
+	text-shadow: none;}
+
+@media all and (min-width: 1401px) {
+h1 img {
+    width: 300px;
+	position:fixed;
+    height: auto;
+	margin-left:60px;
+	margin-top:30px;
+}
+/*header*/
+.sitename {
+	width:200px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:20px;
+	left:0px}
+.sitename img{
+	padding-bottom:15px;}
+header .button {
+	position: fixed;
+	top:40px;
+	left:95%;
+    z-index: 50;
+}
+header .button  img {
+	width:36px;
+	height:37px;
+}
+	
+/*------------------------------
+side
+------------------------------*/
+#side {
+	position:fixed;
+	top:129px;
+	left:60px;
+}
+#side h2{
+    margin-bottom: 10px;
+}
+#side ul li{
+    font-size: 15px;
+    padding-bottom: 19px;
+    letter-spacing: 0.12rem;
+}
+#side ul li ul li{
+    font-size: 11px;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
+#side ul .hr{
+	margin-top:24px;
+	margin-bottom:23px;
+	width:32px;
+	border-top:1px solid #aaa;}
+.gNavi {
+	display:none
+}
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:860px;
+	margin-bottom:100px;
+	margin-left:126px;
+}
+#main_content .title{
+	width: 320px;
+	margin:0 auto;
+	padding-top:70px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+	display: none;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+	display: none;
+}
+#txt_jp{
+    width: 860px;
+    margin: 0 auto;
+	padding-top:208px;
+	padding-left:225px;
+	/*display: none;
+    opacity: 0;*/
+}
+#txt_jp p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.15;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	color: #000;
+	font-size: 15px;
+	padding: 10px 0;
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#txt_en{
+	width: 860px;
+    margin: 0 auto;
+	padding-top:29px;
+	padding-left:235px;
+	padding-bottom:200px;
+}
+#txt_en p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.1;
+	color: #000;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	padding: 10px 0;
+    width: 97.53%;
+}
+
+}
+/*-------- notebook------- */
+@media all and (min-width: 1025px) and (max-width: 1400px) {
+h1 img {
+    width: 300px;
+	position:fixed;
+    height: auto;
+	margin-left:60px;
+	margin-top:30px;
+}
+/*header*/
+.sitename {
+	width:200px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:20px;
+	left:0px}
+.sitename img{
+	padding-bottom:15px;}
+header .button {
+	position: fixed;
+	top:40px;
+	left:95%;
+    z-index: 50;
+}
+header .button  img {
+	width:29px;
+	height:30px;
+}
+/*------------------------------
+side
+------------------------------*/
+#side {
+	position:fixed;
+	top:129px;
+	left:60px;
+}
+#side h2{
+    margin-bottom: 10px;
+}
+#side ul li{
+    font-size: 14px;
+    padding-bottom: 19px;
+    letter-spacing: 0.12rem;
+}
+#side ul li ul li{
+    font-size: 11px;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
+#side ul .hr{
+	margin-top:24px;
+	margin-bottom:23px;
+	width:32px;
+	border-top:1px solid #aaa;}
+.gNavi {
+	display:none
+}
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:860px;
+	margin-bottom:100px;
+	margin-left:108px;
+}
+#main_content .title{
+	width: 320px;
+	margin:0 auto;
+	padding-top:70px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+	display: none;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+	display: none;
+}
+#txt_jp{
+    width: 860px;
+    margin: 0 auto;
+	padding-top:180px;
+	padding-left:180px;
+	/*display: none;
+    opacity: 0;*/
+}
+#txt_jp p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.15;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	color: #000;
+	font-size: 15px;
+	padding: 10px 0;
+    width: 97.53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#txt_en{
+	width: 860px;
+    margin: 0 auto;
+	padding-top:29px;
+	padding-left:190px;
+	padding-bottom:200px;
+}
+#txt_en p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.1;
+	color: #000;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	padding: 10px 0;
+    width: 97.53%;
+}
+
+}
+/*-------- ipad横------- */
+@media all and (min-width: 835px) and (max-width: 1024px) {
+h1 img {
+    width: 300px;
+	position:fixed;
+    height: auto;
+	margin-left:60px;
+	margin-top:30px;
+}
+/*header*/
+.sitename {
+	width:200px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:20px;
+	left:0px}
+.sitename img{
+	padding-bottom:15px;}
+header .button {
+	position: fixed;
+	top:40px;
+	left:95%;
+    z-index: 50;
+}
+header .button  img {
+	width:29px;
+	height:30px;
+}
+/*------------------------------
+side
+------------------------------*/
+#side {
+	position:fixed;
+	top:129px;
+	left:60px;
+}
+#side h2{
+    margin-bottom: 10px;
+}
+#side ul li{
+    font-size: 14px;
+    padding-bottom: 19px;
+    letter-spacing: 0.12rem;
+}
+#side ul li ul li{
+    font-size: 11px;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
+#side ul .hr{
+	margin-top:24px;
+	margin-bottom:23px;
+	width:32px;
+	border-top:1px solid #aaa;}
+.gNavi {
+	display:none
+}
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:860px;
+	margin-bottom:100px;
+	margin-left:108px;
+}
+#main_content .title{
+	width: 320px;
+	margin:0 auto;
+	padding-top:70px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+	display: none;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+	display: none;
+}
+#txt_jp{
+    width: 860px;
+    margin: 0 auto;
+	padding-top:180px;
+	padding-left:180px;
+	/*display: none;
+    opacity: 0;*/
+}
+#txt_jp p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.15;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	color: #000;
+	font-size: 15px;
+	padding: 10px 0;
+    width: 97.53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#txt_en{
+	width: 860px;
+    margin: 0 auto;
+	padding-top:29px;
+	padding-left:190px;
+	padding-bottom:200px;
+}
+#txt_en p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.1;
+	color: #000;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	padding: 10px 0;
+    width: 97.53%;
+}
+
+}
+/*-------- ipadPro縦------- */
+@media all and (min-width: 769px) and (max-width: 834px) {
+h1 img {
+    width: 280px;
+	position:fixed;
+    height: auto;
+	margin-left:60px;
+	margin-top:30px;
+}
+/*header*/
+.sitename {
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:20px;
+	left:0px}
+.sitename img{
+	padding-bottom:15px;}
+header .button {
+	position: fixed;
+	top:46px;
+	left:93%;
+    z-index: 50;
+}
+header .button  img {
+	width:30px;
+	height:31px;
+}
+/*------------------------------
+side
+------------------------------*/
+#side {
+	position:fixed;
+	top:129px;
+	left:60px;
+}
+#side h2{
+    margin-bottom: 10px;
+}
+#side ul li{
+    font-size: 14px;
+    padding-bottom: 19px;
+    letter-spacing: 0.12rem;
+}
+#side ul li ul li{
+    font-size: 11px;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
+#side ul .hr{
+	margin-top:24px;
+	margin-bottom:23px;
+	width:32px;
+	border-top:1px solid #aaa;}
+.gNavi {
+	display:none
+}
+/* --------common--------*/
+.wrapper{
+	width:100%;
+	margin:0 auto;
+	overflow-x: hidden;}
+	
+#countainer {
+	width:100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:0;} 
+
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:500px;
+	margin-bottom:100px;
+	margin-left:39px;
+}
+#main_content .title{
+	width: 320px;
+	margin:0 auto;
+	padding-top:40px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+	display: none;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+	display: none;
+}
+#txt_jp{
+    width: 500px;
+    margin: 0 auto;
+	padding-top:180px;
+	padding-left:180px;
+	/*display: none;
+    opacity: 0;*/
+}
+#txt_jp p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.15;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	color: #000;
+	font-size: 15px;
+	padding: 10px 0;
+    width: 97.53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#txt_en{
+	width: 500px;
+    margin: 0 auto;
+	padding-top:29px;
+	padding-left:190px;
+	padding-bottom:200px;
+}
+#txt_en p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.1;
+	color: #000;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	padding: 10px 0;
+    width: 97.53%;
+}
+
+}
+/*-------- ipad縦------- */
+@media all and (min-width: 600px) and (max-width: 768px) {
+h1 img {
+    width: 280px;
+	position:fixed;
+    height: auto;
+	margin-left:60px;
+	margin-top:30px;
+}
+/*header*/
+.sitename {
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:20px;
+	left:0px}
+.sitename img{
+	padding-bottom:15px;}
+header .button {
+	position: fixed;
+	top:46px;
+	left:93%;
+    z-index: 50;
+}
+header .button  img {
+	width:30px;
+	height:31px;
+}
+/*------------------------------
+side
+------------------------------*/
+#side {
+	position:fixed;
+	top:129px;
+	left:60px;
+}
+#side h2{
+    margin-bottom: 10px;
+}
+#side ul li{
+    font-size: 14px;
+    padding-bottom: 19px;
+    letter-spacing: 0.12rem;
+}
+#side ul li ul li{
+    font-size: 11px;
+}
+div::-webkit-scrollbar {
+    display: none;
+  }
+#side ul .hr{
+	margin-top:24px;
+	margin-bottom:23px;
+	width:32px;
+	border-top:1px solid #aaa;}
+.gNavi {
+	display:none
+}
+/* --------common--------*/
+.wrapper{
+	width:100%;
+	margin:0 auto;
+	overflow-x: hidden;}
+	
+#countainer {
+	width:100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:0;} 
+
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:500px;
+	margin-bottom:100px;
+	margin-left:39px;
+}
+#main_content .title{
+	width: 320px;
+	margin:0 auto;
+	padding-top:40px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+	display: none;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+	display: none;
+}
+#txt_jp{
+    width: 500px;
+    margin: 0 auto;
+	padding-top:180px;
+	padding-left:180px;
+	/*display: none;
+    opacity: 0;*/
+}
+#txt_jp p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.15;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	color: #000;
+	font-size: 15px;
+	padding: 10px 0;
+    width: 97.53%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#txt_en{
+	width: 500px;
+    margin: 0 auto;
+	padding-top:29px;
+	padding-left:190px;
+	padding-bottom:200px;
+}
+#txt_en p{
+    margin-bottom: 6.55%;
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.1;
+	color: #000;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.1rem;
+	padding: 10px 0;
+    width: 97.53%;
+}
+
+}
+/*-------- ７plus 以下-------- */
+@media screen and (max-width: 599px) {
+
+#side{
+	display:none;
+}
+
+body#index h1{
+    opacity: 0;
+}
+
+/*header*/
+.sitename {
+	width:210px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:38px;
+	left:27px}
+.sitename img{
+	padding-bottom:15px;}
+header .button  img {
+	display:none;
+	}
+	
+/* --------common--------*/
+.wrapper{
+	width:400px;
+	margin:0 auto;
+	overflow-x: hidden;}
+	
+#countainer {
+	width:400px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-top:20px;} 
+
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:400px;
+	text-align:left;
+	margin:0 auto;
+	margin-top:24px;
+	margin-left:20px;
+	padding-bottom:2px;
+}
+#main_content .title{
+	width: 400px;
+	margin:0 auto;
+	padding-top:74px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+}
+#txt_jp{
+    width: 400px;
+    margin: 0 auto;
+	padding-top:14px;
+}
+#txt_jp p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.2;
+	letter-spacing:0.02rem;
+	color: #000;
+	font-size: 11px;
+	padding: 10px 0;
+	margin:0 auto;
+}
+#txt_en{
+	width:400px;
+    margin: 0 auto;
+	padding-top:29px;
+	margin-bottom:200px;
+}
+#txt_en p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2;
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 0.02rem;
+	padding: 10px 0;
+}
+}
+/*-------- 7 以下 -------- */
+@media screen and (max-width: 375px) {
+
+#side{
+	display:none;
+}
+
+body#index h1{
+    opacity: 0;
+}
+
+/*header*/
+.sitename {
+	width:200px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:32px;
+	left:27px}
+.sitename img{
+	padding-bottom:15px;}
+header .button  img {
+	display:none;
+	}
+	
+/* --------common--------*/
+.wrapper{
+	width:340px;
+	margin:0 auto;}
+	
+#countainer {
+	width:340px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:20px;} 
+
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:330px;
+	margin:0 auto;
+	margin-top:24px;
+	margin-left:7px;
+	padding-bottom:2px;
+}
+#main_content .title{
+	width: 330px;
+	margin:0 auto;
+	padding-top:74px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+}
+#txt_jp{
+    width: 330px;
+    margin: 0 auto;
+	padding-top:14px;
+}
+#txt_jp p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.2;
+	letter-spacing:0.02rem;
+	color: #000;
+	font-size: 11px;
+	padding: 10px 0;
+	margin:0 auto;
+}
+#txt_en{
+	width: 338px;
+    margin: 0 auto;
+	padding-top:29px;
+	margin-bottom:200px;
+}
+#txt_en p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2;
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 0.02rem;
+	padding: 10px 0;
+}
+}
+/*-------- SE 以下 -------- */
+@media screen and (max-width: 320px) {
+
+#side{
+	display:none;
+}
+
+body#index h1{
+    opacity: 0;
+}
+
+/*header*/
+.sitename {
+	width:190px;
+	margin: 0 auto;
+	text-align:left;
+	position:fixed;
+	top:32px;
+	left:27px}
+.sitename img{
+	padding-bottom:15px;}
+header .button  img {
+	display:none;
+	}
+	
+/* --------common--------*/
+.wrapper{
+	width:320px;
+	margin:0 auto;}
+	
+#countainer {
+	width:320px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+	margin-top:20px;} 
+
+/*------------------------------
+contents
+------------------------------*/
+#main_content{
+	width:260px;
+	margin:0 auto;
+	margin-top:24px;
+	margin-left:27px;
+	padding-bottom:2px;
+}
+#main_content .title{
+	width: 260px;
+	margin:0 auto;
+	padding-top:74px;
+	padding-left:3px;
+	font-size: 15px;
+	letter-spacing:0.08rem;
+}
+#main_content .hr{
+	width:24px;
+	border-bottom:solid 0.5px #000;
+	padding-top:21px;
+	margin-left:4px;
+}
+#txt_jp{
+    width: 260px;
+    margin: 0 auto;
+	padding-top:14px;
+}
+#txt_jp p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2.2;
+	letter-spacing:0.02rem;
+	color: #000;
+	font-size: 11px;
+	padding: 10px 0;
+	margin:0 auto;
+}
+#txt_en{
+	width: 260px;
+    margin: 0 auto;
+	padding-top:29px;
+	margin-bottom:200px;
+}
+#txt_en p{
+    position: relative;
+    text-align: left;
+	font-family: 'Georgia';
+	line-height:2;
+	color: #000;
+	font-size: 12px;
+	letter-spacing: 0.02rem;
+	padding: 10px 0;
+}
+}
+
+
+
+
+
