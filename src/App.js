@@ -8,7 +8,7 @@ import logo from "./logo-black.png";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menu: "1", password: "bodhi" };
+    this.state = { menu: "1", password: "" };
     this.handleAbout = this.handleAbout.bind(this);
     this.handleContact = this.handleContact.bind(this);
     this.handleGallery = this.handleGallery.bind(this);
@@ -55,8 +55,10 @@ class App extends React.Component {
       <div className="wrapper" style={{ display: "block" }}>
         {!password && (
           <form className="app-password" onSubmit={this.handleSubmit}>
+            <img src={logo} width={300} style={{ padding: "40px 20px" }} />
             <input
               type="text"
+              style={{ padding: "12px 20px" }}
               value={this.state.value}
               placeholder="Enter Password"
               onChange={this.handleChange}
