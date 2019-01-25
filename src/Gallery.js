@@ -1,4 +1,14 @@
 import React, { Component } from "react";
+
+import img1 from "./img/01.jpg";
+import img2 from "./img/02.jpg";
+import img3 from "./img/03.jpg";
+import img4 from "./img/04.jpg";
+import img5 from "./img/05.jpg";
+import img6 from "./img/06.jpg";
+import img7 from "./img/07.jpg";
+import img8 from "./img/08.jpg";
+
 class Gallery extends React.Component {
   render() {
     return <Tiles data={this.props.data} />;
@@ -11,56 +21,42 @@ class Tiles extends React.Component {
       {
         id: 1,
         name: "Island",
-        image:
-          "https://images.unsplash.com/photo-1442530792250-81629236fe54?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=9631adb2d2f752e3a0734f393fef634b"
+        image: img1
       },
       {
         id: 2,
         name: "Forest",
-        image:
-          "https://images.unsplash.com/photo-1468851508491-4f854ec88aa0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=900&h=900&fit=crop&s=b1222b6a1d3694cac76d2a23c3a02254"
+        image: img2
       },
       {
         id: 3,
         name: "Whale",
-        image:
-          "https://images.unsplash.com/photo-1454991727061-be514eae86f7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=900&h=900&fit=crop&s=3c55430f01fe9ac9a9ccb3383d1416ff"
+        image: img3
       },
       {
         id: 4,
         name: "Mountain",
-        image:
-          "https://images.unsplash.com/photo-1467890947394-8171244e5410?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=9396f0adf263b51b44626228225684d0"
+        image: img4
       },
       {
         id: 5,
         name: "Boat",
-        image:
-          "https://images.unsplash.com/photo-1443302382600-0bfacc473376?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=0c0f26518c1001f67b6c2e4480a8d3e0"
+        image: img5
       },
       {
         id: 6,
         name: "Flowers",
-        image:
-          "https://images.unsplash.com/photo-1429091443922-e7d9ae79a837?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=900&h=900&fit=crop&s=e81cb6a60c53788559edb9bec21b80fc"
+        image: img6
       },
       {
         id: 7,
         name: "Fire",
-        image:
-          "https://images.unsplash.com/photo-1468245856972-a0333f3f8293?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=900&h=900&fit=crop&s=1f57cc13084e32839627453821a43abf"
+        image: img7
       },
       {
         id: 8,
         name: "Garden",
-        image:
-          "https://images.unsplash.com/photo-1427392797425-39090deb14ec?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=900&h=900&fit=crop&s=8bfe49466d0da200e61128a8ab0e8fbe"
-      },
-      {
-        id: 9,
-        name: "Bridge",
-        image:
-          "https://images.unsplash.com/photo-1445723356089-6dbb51d9c4f8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=980&h=980&fit=crop&s=6e476c6e7ce1adac161295616d1bec05"
+        image: img8
       }
     ];
     return (
@@ -118,16 +114,18 @@ class Tile extends React.Component {
   stylesToDisplay() {
     if (this.state.open) {
       return {
-        width: "62vw",
-        height: "62vw",
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        margin: "0",
-        marginTop: "-31vw",
-        marginLeft: "-31vw",
-        boxShadow: "0 0 40px 5px rgba(0, 0, 0, 0.3)",
-        transform: "none"
+        width: "50vh",
+        height: "50vh"
+        // width: "62vw",
+        // height: "62vw",
+        // position: "absolute",
+        // top: "50%",
+        // left: "50%",
+        // margin: "0",
+        // marginTop: "-31vw",
+        // marginLeft: "-31vw",
+        // boxShadow: "0 0 40px 5px rgba(0, 0, 0, 0.3)",
+        // transform: "none"
       };
     }
     return {

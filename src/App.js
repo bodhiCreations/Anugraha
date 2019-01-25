@@ -12,7 +12,7 @@ import { slide as Menu } from "react-burger-menu";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menu: "0", menuOpen: false, password: "" };
+    this.state = { menu: "1", menuOpen: false, password: "bodhi" };
     this.handleAbout = this.handleAbout.bind(this);
     this.handleContact = this.handleContact.bind(this);
     this.handleGallery = this.handleGallery.bind(this);
@@ -31,6 +31,7 @@ class App extends React.Component {
     this.setState(state => ({
       menu: "0"
     }));
+    this.closeMenu();
   }
   handleStateChange(state) {
     this.setState({ menuOpen: state.isOpen });
@@ -73,11 +74,9 @@ class App extends React.Component {
   wrapperStyle() {
     if (this.state.menu === "0") {
       return {
-        // display: "block",
         backgroundImage: `url(${bgImg})`,
         backgroundSize: "cover",
         overflow: "hidden"
-        // backgroundColor: "#cccccc"
       };
     }
     return {

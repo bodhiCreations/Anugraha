@@ -89,9 +89,11 @@ p {
   letter-spacing: 0.1rem;
   padding: 10px 0;
   width: 97.53%;
+  word-wrap: break-word; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;
 }
 .main_content {
-  width: 860px;
   margin-bottom: 100px;
   max-width: 100%;
   padding: 20px;
@@ -115,6 +117,7 @@ body {
   flex-direction: row;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .bm-burger-button {
@@ -132,7 +135,7 @@ body {
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #fff;
 }
 
 /* Position and sizing of clickable cross button */
@@ -196,6 +199,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   width: 100%;
   height: auto;
   transition: 0.5s ease;
+  overflow: hidden;
   backface-visibility: hidden;
 }
 
