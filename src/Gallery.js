@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { isMobile } from "react-device-detect";
 import img1 from "./img/01.jpg";
 import img2 from "./img/02.jpg";
 import img3 from "./img/03.jpg";
@@ -20,42 +20,42 @@ class Tiles extends React.Component {
     const data = [
       {
         id: 1,
-        name: "Island",
+        name: "by - Anugraha",
         image: img1
       },
       {
         id: 2,
-        name: "Forest",
+        name: "by - Anugraha",
         image: img2
       },
       {
         id: 3,
-        name: "Whale",
+        name: "by - Anugraha",
         image: img3
       },
       {
         id: 4,
-        name: "Mountain",
+        name: "by - Anugraha",
         image: img4
       },
       {
         id: 5,
-        name: "Boat",
+        name: "by - Anugraha",
         image: img5
       },
       {
         id: 6,
-        name: "Flowers",
+        name: "by - Anugraha",
         image: img6
       },
       {
         id: 7,
-        name: "Fire",
+        name: "by - Anugraha",
         image: img7
       },
       {
         id: 8,
-        name: "Garden",
+        name: "by - Anugraha",
         image: img8
       }
     ];
@@ -112,10 +112,10 @@ class Tile extends React.Component {
     }
   }
   stylesToDisplay() {
-    if (this.state.open) {
+    if (isMobile) {
       return {
-        width: "50vh",
-        height: "50vh"
+        width: "80vw",
+        height: "80vw"
         // width: "62vw",
         // height: "62vw",
         // position: "absolute",

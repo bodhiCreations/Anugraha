@@ -166,7 +166,7 @@ class App extends React.Component {
               </div>
               <div
                 className="mobile-menu"
-                style={{ flex: "1", padding: "10px" }}
+                style={{ flex: "1", padding: "0 10px 10px 10px" }}
               >
                 <Menu
                   right
