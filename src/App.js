@@ -12,7 +12,7 @@ import { slide as Menu } from "react-burger-menu";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menu: "1", menuOpen: false, password: "bodhi" };
+    this.state = { menu: "0", menuOpen: false, password: "" };
     this.handleAbout = this.handleAbout.bind(this);
     this.handleContact = this.handleContact.bind(this);
     this.handleGallery = this.handleGallery.bind(this);
@@ -103,8 +103,7 @@ class App extends React.Component {
     const showAboutUs = this.state.menu === "1";
     const showGallery = this.state.menu === "2";
     const showContactUs = this.state.menu === "3";
-    const password = this.state.password === "bodhi";
-    console.log(isMobile);
+    const password = this.state.password === "manju";
     return (
       <div className="wrapper" style={this.wrapperStyle()}>
         {!password && (
