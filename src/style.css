@@ -1,15 +1,43 @@
 .text-area {
+  max-width: 100%;
+  word-wrap: break-word;
   width: 860px;
   margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 200px;
 }
-.app-body {
+.app-body,
+.mobile-top-bar {
   display: flex;
+  outline: none;
   flex-direction: row;
 }
 
-.app-navigation {
+.wrapper {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.app-navigation-white {
+  padding: 5px 0px 5px 30px;
+  text-align: left;
+  font-family: "Georgia";
+  line-height: 2.1;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+}
+
+.app-navigation-black {
   padding: 5px 0px 5px 30px;
   position: relative;
   text-align: left;
@@ -65,6 +93,9 @@ p {
 .main_content {
   width: 860px;
   margin-bottom: 100px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 10px;
 }
 
 @import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
@@ -85,17 +116,111 @@ body {
   justify-content: center;
   position: relative;
 }
-.tile {
-  margin: 15px;
+
+.bm-burger-button {
+  outline: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+
   cursor: pointer;
   overflow: hidden;
-  width: 18vw;
-  height: 18vw;
-  img {
-    width: 100%;
-    transition: transform 500ms ease;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }

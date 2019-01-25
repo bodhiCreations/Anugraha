@@ -84,12 +84,12 @@ class Tile extends React.Component {
     this._clickHandler = this._clickHandler.bind(this);
     this._mouseEnter = this._mouseEnter.bind(this);
     this._mouseLeave = this._mouseLeave.bind(this);
+    this.stylesToDisplay = this.stylesToDisplay.bind(this);
   }
   // Event handlers to modify state values
   _mouseEnter(e) {
     e.preventDefault();
     if (this.state.mouseOver === false) {
-      console.log(this.props.data.name);
       this.setState({
         mouseOver: true
       });
@@ -115,15 +115,9 @@ class Tile extends React.Component {
       });
     }
   }
-
-  render() {
-    // Modify styles based on state values
-    let tileStyle = {};
-    let headerStyle = {};
-    let zoom = {};
-    // When tile clicked
+  stylesToDisplay() {
     if (this.state.open) {
-      tileStyle = {
+      return {
         width: "62vw",
         height: "62vw",
         position: "absolute",
@@ -135,23 +129,28 @@ class Tile extends React.Component {
         boxShadow: "0 0 40px 5px rgba(0, 0, 0, 0.3)",
         transform: "none"
       };
-    } else {
-      tileStyle = {
-        width: "18vw",
-        height: "18vw"
-      };
     }
+    return {
+      width: "50vh",
+      height: "50vh"
+    };
+  }
 
+  render() {
     return (
-      <div className="tile">
+      <div className="container">
         <img
           onMouseEnter={this._mouseEnter}
           onMouseLeave={this._mouseLeave}
           onClick={this._clickHandler}
           src={this.props.data.image}
           alt={this.props.data.name}
-          style={tileStyle}
+          style={this.stylesToDisplay()}
+          className="image"
         />
+        <div className="middle">
+          <div className="text">{this.props.data.name}</div>
+        </div>
       </div>
     );
   }
