@@ -81,10 +81,11 @@ class AboutUs extends Component {
                 Villa Anugraha is located in Aymanam village, in Kottayam, a
                 central district of Kerala. This bountiful area on the banks of
                 the Meenachil river, was the setting of Arundhati Roy’s 1997
-                Booker Prize-winning novel God of Small Things. The 7.5-acre
-                property is punctuated by canals, a thriving pond, vegetable
-                garden, many varieties of tropical fruit trees, hardwoods,
-                bamboo, and various kinds of ferns, designed and laid out by
+                Booker Prize-winning novel
+                <i> The God of Small Things.</i> The 7.5-acre property,
+                punctuated by canals, a thriving pond, vegetable garden, many
+                varieties of tropical fruit trees, hardwoods, bamboo, and
+                various kinds of ferns, was designed and laid out by
                 award-winning landscape architect Tom Stuart-Smith. The airport
                 nearest to Kottayam is the Kochi International airport, which is
                 2.5 hours away.

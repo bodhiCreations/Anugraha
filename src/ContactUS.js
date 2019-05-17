@@ -28,13 +28,13 @@ class ContactUS extends Component {
             Kerala, India
             <br />
             <br />
-            <i class="fas fa-envelope pr-2" />
+            <i className="fas fa-envelope pr-2" />
             anugraha@gmail.com
             <br />
-            <i class="fas fa-mobile-alt pr-2" />
+            <i className="fas fa-mobile-alt pr-2" />
             +91 989232 92292
             <br />
-            <i class="fab fa-instagram pr-2" />
+            <i className="fab fa-instagram pr-2" />
             @anugrahakerala
           </p>
         </div>
