@@ -77,28 +77,13 @@
   display: flex;
   flex-direction: column;
 }
-p {
-  margin-bottom: 6.55%;
-  position: relative;
-  text-align: left;
-  font-family: "Georgia";
-  line-height: 2.1;
-  color: #000;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.1rem;
-  padding: 10px 0;
-  width: 97.53%;
-  word-wrap: break-word; /* IE 5.5-7 */
-  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
-  white-space: pre-wrap;
-}
+/* 
 .main_content {
   margin-bottom: 100px;
   max-width: 100%;
   padding: 20px;
   margin: 10px;
-}
+} */
 
 @import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
 
@@ -126,6 +111,10 @@ body {
   width: 36px;
   height: 30px;
   top: 36px;
+}
+
+.p-text-def {
+  font-family: "Garamond";
 }
 
 /* Color/shape of burger icon bars */
